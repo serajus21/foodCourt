@@ -1,0 +1,73 @@
+:root {box-sizing: border-box; font-size: 16px;}
+*, *::after, *::before {box-sizing: inherit; margin: 0; padding: 0;}
+body {background: linear-gradient(to right, rgba(0, 0, 0, 0.850), rgba(0, 0, 0, 0.650)), url('background.jpg') no-repeat fixed center; background-size: cover;}
+
+/* header */
+header {
+    min-height: 5em; display: flex; justify-content: space-between; align-items: center; padding: 0.5em 1em;
+}
+.link {text-decoration: none; font-size: 1em; padding: 0.5em 1em; margin: 0 0.5em; font-weight: bold;}
+.link--brand {display: flex; align-items: center;}
+.link--brand span {font-size: 2em; color: darkgoldenrod;}
+.link--brand img {height: 2em; margin: 0 0.5em;}
+.link--nav {color: white;} .link--nav:hover {color: orange;}
+.link--logIn {color: black; background-color: orange;} .link--logIn:hover {background-color: white;}
+.link--deal {color: white; border: 0.1em solid;} .link--deal:hover {color: orange;}
+.menuBar {font-size: 1.5em; margin: 0 0.5em 0 0; background-color: transparent; width: 1em; border: none; position: fixed; color: transparent; cursor: pointer;}
+#view {rotate: 90deg;}
+
+/*
+<main>
+    <!-- about -->
+    <section class="about">
+        <span class="abtext abtext--title">Let's go for <br>safer food</span>
+        <span class="abtext abtext--subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non pariatur deserunt exercitationem, eius in nesciunt atque dolores vel earum nisi tempore, at reprehenderit iste officia libero. Repellat numquam odio sunt.</span>
+        <span class="abtext abtext--subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non pariatur deserunt exercitationem, eius in nesciunt atque dolores vel earum nisi tempore, at reprehenderit iste officia libero. Repellat numquam odio sunt.</span>
+    </section>
+    <!-- form -->
+    <form action="https://formspree.io/f/xpzgreya" method="post">
+        <input type="text" id="name" name="name" placeholder="Full Name">
+        <input type="text" id="phone" name="phone" placeholder="Contact No.">
+        <input type="email" id="email" name="email" placeholder="Email Address">
+        <input type="password" id="pass" name="pass" placeholder="Password">
+        <input type="submit" value="Sign Up">
+    </form>
+</main>
+*/
+/* main */
+    /*about*/
+main {
+    display: flex; justify-content: space-between; padding: 5em 2em;
+}
+.about, form {width: 100%; margin: 1em;}
+.abtext {color: white; display: block;}
+.abtext--title {font-size: 4.5em;}
+.abtext--subtitle {font-size: 1em; margin: 2.5em 0 0 0; color: gray;}
+    /*form*/
+form {display: flex; flex-direction: column; justify-content: flex-end; align-items: center;}
+input {display: block; width: 25em; padding: 0.7em 1.2em; margin: 1.5em 0 0 0; background-color: lightsalmon; border: none; transition: all 0.5s ease; border-radius: 5px; } input::placeholder {color: black;}
+input:focus {background-color: white;}
+input[type=submit] {background-color: rgb(248, 188, 76); cursor: pointer; font-weight: bolder;} input[type="submit"]:hover {background-color: aliceblue;} input[type="submit"]:focus {all: unset;}
+
+
+@media (max-width: 970px) {
+    :root {font-size: 14px;}
+    .abtext--title {font-size: 4em;}
+}
+@media (max-width: 820px) {
+    :root {font-size: 12px;}
+    .abtext--title {font-size: 3.7em;}
+}
+@media (max-width: 720px) {
+    :root {font-size: 10px;}
+    .menuBar {position: static; color: white;}
+    #hide {display: none;}
+    .nav {
+        position: fixed; top: 5em; right: -100%; background-color: rgba(0, 0, 0, 0.908); width: 100%; height: 100vh;
+        display: flex; flex-direction: column; align-items: center; transition: all 250ms ease;
+    }
+    .link--nav {margin: 1em;}
+    main {flex-direction: column;}
+    input {font-size: 1em;}
+}
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Court</title>
+    <link rel="shortcut icon" href="favicon-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <a href="" class="link link--brand">
+            <img src="favicon-logo.png" alt=""><span>FoodCourt</span>
+        </a>
+        <nav class="nav" id="nav">
+            <a href="" class="link link--nav">Home</a>
+            <a href="" class="link link--nav">Centers</a>
+            <a href="" class="link link--nav">Contact</a>
+            <a href="" class="link link--nav">Order</a>
+        </nav>
+        <span class="join">
+            <a href="" class="link link--logIn">Log In</a>
+            <a href="" class="link link--deal">Make a deal</a>
+            <button class="menuBar" id="view" onclick="viewM()">|||</button>
+            <button class="menuBar" id="hide" onclick="hideM()">X</button>
+        </span>
+    </header>
+
+    <!-- main -->
+    <main>
+        <!-- about -->
+        <section class="about">
+            <span class="abtext abtext--title">Let's go for <br>hygienic food</span>
+            <span class="abtext abtext--subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non pariatur deserunt exercitationem, eius in nesciunt atque dolores vel earum nisi tempore, at reprehenderit iste officia libero. Repellat numquam odio sunt.</span>
+            <span class="abtext abtext--subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non pariatur deserunt exercitationem, eius in nesciunt atque dolores vel earum nisi tempore, at reprehenderit iste officia libero. Repellat numquam odio sunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa recusandae aliquam amet, dolore aut accusantium, nihil cumque totam architecto doloremque saepe cum dicta ex sunt? Voluptatum quibusdam ducimus soluta voluptatem.</span>
+        </section>
+        <!-- form -->
+        <form action="https://formspree.io/f/xpzgreya" method="post">
+            <input type="text" id="name" name="name" placeholder="Full Name">
+            <input type="text" id="phone" name="phone" placeholder="Contact No.">
+            <input type="email" id="email" name="email" placeholder="Email Address">
+            <input type="password" id="pass" name="pass" placeholder="Password">
+            <input type="submit" value="Sign Up">
+        </form>
+    </main>
+</body>
+</html>
